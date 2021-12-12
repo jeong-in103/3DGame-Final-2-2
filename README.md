@@ -11,8 +11,8 @@
 
 > # 파일 이름 구분
 * 최수지
-  * 파일 뒤 _C 붙이기
-  * Ex) SampleScript_C
+  * 파일 뒤 **_S** 붙이기
+  * Ex) SampleScript_S
 * 문정인
-  * 피일 뒤 _M 붙이기
+  * 파일 뒤 **_M** 붙이기
   * EX) SampleScript_M
