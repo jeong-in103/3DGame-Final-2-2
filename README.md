@@ -12,9 +12,3 @@
 * 문정인
   * 파일 뒤 **_M** 붙이기
   * EX) SampleScript_M
-* 박다빈
-  * 파일 뒤 **_P** 붙이기
-  * EX) SampleScript_P
-* 임승연
-  * 파일 뒤 **_L** 붙이기
-  * EX) SampleScript_L
