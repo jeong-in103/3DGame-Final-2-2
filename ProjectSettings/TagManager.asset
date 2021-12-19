@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - Item
+  - Mineral
+  - Tree
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
     private GameObject go_InventoryBase; // Inventory_Base 이미지
     [SerializeField]
     private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting 
+    [SerializeField]
+    private GameObject AimImage; // 에임 이미지
 
     private Slot[] slots;  // 슬롯들 배열
 
@@ -40,11 +42,13 @@ public class Inventory : MonoBehaviour
     private void OpenInventory()
     {
         go_InventoryBase.SetActive(true);
+        AimImage.SetActive(false);
     }
 
     private void CloseInventory()
     {
         go_InventoryBase.SetActive(false);
+        AimImage.SetActive(true);
     }
 
     public void AcquireItem(Item _item, int _count = 1)
