@@ -64,7 +64,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
-            if (!Inventory.invectoryActivated)
+            if (!Inventory.invectoryActivated && !ToolInventory.ToolInvectoryActivated)
             {
                 RotateView();
                 // the jump state needs to read here to make sure it is not missed
@@ -86,6 +86,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
 
                 m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+                m_MouseLook.SetCursorLock(true);
+            }
+            else
+            {
+                m_MouseLook.SetCursorLock(false);
             }
         }
 
@@ -100,7 +106,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
-            if (!Inventory.invectoryActivated)
+            if (!Inventory.invectoryActivated && !ToolInventory.ToolInvectoryActivated)
             {
                 float speed;
                 GetInput(out speed);
@@ -138,7 +144,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 ProgressStepCycle(speed);
                 UpdateCameraPosition(speed);
 
-                m_MouseLook.UpdateCursorLock();
+                //m_MouseLook.UpdateCursorLock();
             }
         }
 

@@ -11,7 +11,7 @@ public class Rock : MonoBehaviour
     private Animator animator; // 애니메이터
 
     [SerializeField]
-    private SphereCollider col; // 구체 콜라이더. 바위 파괴시키면 비활성화시키 ㄹ것.
+    private BoxCollider col; // 구체 콜라이더. 바위 파괴시키면 비활성화시키 ㄹ것.
 
     [SerializeField]
     private GameObject go_rock;  // 일반 바위 오브젝트. 평소에 활성화, 바위 깨지면 비활성화

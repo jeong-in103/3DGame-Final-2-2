@@ -40,6 +40,8 @@ public class WeaponManager : MonoBehaviour
     [SerializeField]
     private SwordController theSwordController; // 칼 일땐 SwordController.cs 활성화, 다른 무기일 땐 SwordController.cs 비활성화
 
+    [SerializeField]
+    private Inventory theInventory;
 
     void Start()
     {
@@ -67,16 +69,40 @@ public class WeaponManager : MonoBehaviour
         {
             if (!isChangeWeapon)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha1)) // 1 누르면 '맨손'으로 무기 교체 실행
-                    StartCoroutine(ChangeWeaponCoroutine("HAND", "Hand"));
-                else if (Input.GetKeyDown(KeyCode.Alpha2)) // 2 누르면 '도끼'로 무기 교체 실행
-                    StartCoroutine(ChangeWeaponCoroutine("AXE", "Axe"));
-                else if (Input.GetKeyDown(KeyCode.Alpha3)) // 3 누르면 '곡괭이'로 무기 교체 실행
-                    StartCoroutine(ChangeWeaponCoroutine("PICKAXE", "Pickaxe"));
-                else if (Input.GetKeyDown(KeyCode.Alpha4)) // 4 누르면 '칼'로 무기 교체 실행
-                    StartCoroutine(ChangeWeaponCoroutine("SWORD", "Sword"));
+                // 인벤토리와 대응하여 무기 교체 실행
+                if (Input.GetKeyDown(KeyCode.Alpha1)) 
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(0)), theInventory.ReturnWeaponSlot(0)));
+                else if (Input.GetKeyDown(KeyCode.Alpha2)) 
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(1)), theInventory.ReturnWeaponSlot(1)));
+                else if (Input.GetKeyDown(KeyCode.Alpha3))
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(2)), theInventory.ReturnWeaponSlot(2)));
+                else if (Input.GetKeyDown(KeyCode.Alpha4))
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(3)), theInventory.ReturnWeaponSlot(3)));
+                else if (Input.GetKeyDown(KeyCode.Alpha5))
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(4)), theInventory.ReturnWeaponSlot(4)));
+                else if (Input.GetKeyDown(KeyCode.Alpha6))
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(5)), theInventory.ReturnWeaponSlot(5)));
+                else if (Input.GetKeyDown(KeyCode.Alpha7))
+                    StartCoroutine(ChangeWeaponCoroutine(returnType(theInventory.ReturnWeaponSlot(6)), theInventory.ReturnWeaponSlot(6)));
             }
         }
+    }
+
+    private string returnType(string i)
+    {
+        switch(i)
+        {
+            case "Hand":
+                return "HAND";
+            case "Axe":
+                return "AXE";
+            case "Sword":
+                return "SWORD";
+            case "PickAxe":
+                return "PICKAXE";
+        }
+
+        return null;
     }
 
     public IEnumerator ChangeWeaponCoroutine(string _type, string _name)

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6001439308424652575}
   - component: {fileID: 5168032089972174962}
   - component: {fileID: 8567926274626071825}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Wood
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5296648055106986017, guid: 53d2602d68ce95b498671d17f17f6876, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d2602d68ce95b498671d17f17f6876, type: 3}

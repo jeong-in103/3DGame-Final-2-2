@@ -7,22 +7,46 @@ public class Inventory : MonoBehaviour
     public static bool invectoryActivated = false;  // 인벤토리 활성화 여부. true가 되면 카메라 움직임과 다른 입력을 막을 것이다.
 
     [SerializeField]
+    private WeaponImageUpdate sub_Inventory; // sub 인벤토리
+
+    [SerializeField]
     private GameObject go_InventoryBase; // Inventory_Base 이미지
     [SerializeField]
-    private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting 
+    private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting1
+    [SerializeField]
+    private GameObject go_SlotsParent2;  // WeaponSlot들의 부모인 Grid Setting2
     [SerializeField]
     private GameObject AimImage; // 에임 이미지
 
     private Slot[] slots;  // 슬롯들 배열
+    private WeaponSlot[] WeaponSlots;  // 슬롯들 배열
 
     void Start()
     {
         slots = go_SlotsParent.GetComponentsInChildren<Slot>();
+        WeaponSlots = go_SlotsParent2.GetComponentsInChildren<WeaponSlot>();
     }
 
     void Update()
     {
         TryOpenInventory();
+    }
+
+    public string ReturnWeaponSlot(int i)
+    {
+        if (WeaponSlots[i].item != null)
+        {
+            return WeaponSlots[i].item.itemName;
+        }
+        else
+        {
+            return "Hand";
+        }
+    }
+
+    public Slot[] ReturnSlot()
+    {
+        return slots;
     }
 
     private void TryOpenInventory()
@@ -76,5 +100,25 @@ public class Inventory : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public void AcquireWeaponItem(Slot _item)
+    {
+        if (_item.itemButton.color.a == 0)
+        {
+            return;
+        }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (WeaponSlots[i].item == null)
+            {
+                WeaponSlots[i].AddItem(_item.item);
+                sub_Inventory.UpdateImage(WeaponSlots);
+                return;
+            }
+        }
+
+        _item.ClearSlot();
     }
 }
