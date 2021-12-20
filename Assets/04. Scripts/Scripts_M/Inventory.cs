@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private GameObject AimImage; // 에임 이미지
 
-    private Slot[] slots;  // 슬롯들 배열
+    public Slot[] slots;  // 슬롯들 배열
     private WeaponSlot[] WeaponSlots;  // 슬롯들 배열
 
     void Start()
@@ -42,6 +42,11 @@ public class Inventory : MonoBehaviour
         {
             return "Hand";
         }
+    }
+
+    public WeaponSlot[] ReturnWeaponSlot()
+    {
+        return WeaponSlots;
     }
 
     public Slot[] ReturnSlot()
@@ -102,6 +107,25 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void AcquireWeaponItemToItem(WeaponSlot _item)
+    {
+        if (_item.itemImage.color.a == 0)
+        {
+            return;
+        }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].item == null)
+            {
+                slots[i].AddItem(_item.item);
+                _item.ClearSlot();
+                sub_Inventory.UpdateImage(WeaponSlots);
+                return;
+            }
+        }
+    }
+
     public void AcquireWeaponItem(Slot _item)
     {
         if (_item.itemButton.color.a == 0)
@@ -115,10 +139,9 @@ public class Inventory : MonoBehaviour
             {
                 WeaponSlots[i].AddItem(_item.item);
                 sub_Inventory.UpdateImage(WeaponSlots);
+                _item.ClearSlot();
                 return;
             }
         }
-
-        _item.ClearSlot();
     }
 }

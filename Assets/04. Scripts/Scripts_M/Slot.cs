@@ -26,17 +26,29 @@ public class Slot : MonoBehaviour
     // 아이템 이미지의 투명도 조절
     private void SetColor(float _alpha)
     {
-        if (item.itemType != Item.ItemType.Equipment)
+        if(item == null)
         {
-            Color color = itemImage.color;
-            color.a = _alpha;
-            itemImage.color = color;
+            Color color1 = itemImage.color;
+            color1.a = _alpha;
+            itemImage.color = color1;
+
+            Color color2 = itemButton.color;
+            color2.a = _alpha;
+            itemButton.color = color2;
+            return;
+        }
+
+        if(item.itemType != Item.ItemType.Equipment)
+        {
+            Color color1 = itemImage.color;
+            color1.a = _alpha;
+            itemImage.color = color1;
         }
         else
         {
-            Color color = itemButton.color;
-            color.a = _alpha;
-            itemButton.color = color;
+            Color color2 = itemButton.color;
+            color2.a = _alpha;
+            itemButton.color = color2;
         }
     }
 
@@ -46,6 +58,7 @@ public class Slot : MonoBehaviour
         item = _item;
         itemCount = _count;
         itemImage.sprite = item.itemImage;
+        itemButton.sprite = item.itemImage;
 
         if (item.itemType != Item.ItemType.Equipment)
         {
@@ -74,13 +87,16 @@ public class Slot : MonoBehaviour
     // 해당 슬롯 하나 삭제
     public void ClearSlot()
     {
-        if (itemButton.color.a == 0)
+        if(itemImage.color.a == 0)
         {
+            itemButton.sprite = null;
+            SetColor(0);
+            item = null;
             return;
         }
+
         itemCount = 0;
         itemImage.sprite = null;
-        itemButton.sprite = null;
         SetColor(0);
         item = null;
 

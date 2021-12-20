@@ -41,6 +41,12 @@ public class WeaponImageUpdate : MonoBehaviour
                 color.a = 1;
                 slots[i].color = color;
             }
+            else
+            {
+                Color color = slots[i].color;
+                color.a = 0;
+                slots[i].color = color;
+            }
         }
     }
 }

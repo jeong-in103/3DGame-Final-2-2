@@ -28,9 +28,14 @@ public class StatusController : MonoBehaviour
     private bool spUsed;
     public bool cantUseSp;
 
+    public int coin = 0;
+
     // 필요한 이미지
     [SerializeField]
     private Image[] images_Gauge;
+
+    [SerializeField]
+    private Text coinText; // 코인 개수
 
     // 각 상태를 대표하는 인덱스
     private const int HP = 0, SP = 1;
@@ -52,6 +57,7 @@ public class StatusController : MonoBehaviour
     {
         images_Gauge[HP].fillAmount = (float)currentHp / hp;
         images_Gauge[SP].fillAmount = (float)currentSp / sp;
+        coinText.text = coin.ToString();
     }
 
     public void IncreaseHP(int _count)

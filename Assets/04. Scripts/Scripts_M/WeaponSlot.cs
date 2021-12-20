@@ -25,4 +25,15 @@ public class WeaponSlot : MonoBehaviour
 
         SetColor(1);
     }
+
+    public void ClearSlot()
+    {
+        if (itemImage.color.a == 0)
+        {
+            return;
+        }
+        itemImage.sprite = null;
+        SetColor(0);
+        item = null;
+    }
 }

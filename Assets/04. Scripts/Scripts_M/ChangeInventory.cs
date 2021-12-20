@@ -9,13 +9,22 @@ public class ChangeInventory : MonoBehaviour
     [SerializeField]
     private Transform toolInventory;  // WeaponSlot들의 부모인 Grid Setting2
 
+    private Vector3 pos;
+
+    private void Start()
+    {
+        pos = this.transform.position;
+    }
+
     public void ChangeParentToInventory()
     {
-        this.transform.SetParent(inventory, false);
+        this.transform.parent = inventory.transform;
+        //this.transform.localPosition = pos + new Vector3(0, 0, 0);
     }
 
     public void ChangeParentToToolInventory()
     {
-        this.transform.SetParent(toolInventory, false);
+        this.transform.parent = toolInventory.transform;
+        //this.transform.localPosition = pos + new Vector3(0, -140, 0);
     }
 }
