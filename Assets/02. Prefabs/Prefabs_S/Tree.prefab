@@ -535,6 +535,7 @@ MonoBehaviour:
   traceDist: 200
   attackDist: 5
   hp: 250
+  meat: {fileID: 5972404565614835261, guid: 4922efebf84d92c49b4f97c2054c953c, type: 3}
 --- !u!195 &5565195181850614643
 NavMeshAgent:
   m_ObjectHideFlags: 0

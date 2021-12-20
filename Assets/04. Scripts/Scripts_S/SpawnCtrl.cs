@@ -20,11 +20,6 @@ public class SpawnCtrl : MonoBehaviour
             TerrainData theIsland;
             theIsland = GameObject.Find("Terrain").GetComponent<Terrain>().terrainData;
             // For every tree on the island
-
-            float newX = Random.Range(0f, 500f);
-            float newY = Random.Range(0f, 50f);
-            float newZ = Random.Range(0f, 500f);
-
             for (int i = 0; i < monster.Length; i++)
             {
                 // Find its local position scaled by the terrain size (to find the real world position)

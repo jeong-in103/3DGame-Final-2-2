@@ -832,6 +832,7 @@ MonoBehaviour:
   traceDist: 200
   attackDist: 4
   hp: 600
+  meat: {fileID: 5972404565614835261, guid: 4922efebf84d92c49b4f97c2054c953c, type: 3}
 --- !u!1 &64665214103608999
 GameObject:
   m_ObjectHideFlags: 0

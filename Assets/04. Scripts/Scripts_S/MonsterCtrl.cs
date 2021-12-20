@@ -17,10 +17,16 @@ public class MonsterCtrl : MonoBehaviour
     private NavMeshAgent nvAgent;
     private Animator animator;
 
+    [SerializeField]
+    private GameObject meat;
+
     private bool isDead = false;
+
+    private StatusController statusController;
 
     void Start()
     {
+        statusController = GameObject.Find("FPSController").GetComponent<StatusController>();
         monsterTr = GetComponent<Transform>();
         playerTr = GameObject.FindWithTag("Player").GetComponent<Transform>();
         nvAgent = GetComponent<NavMeshAgent>();
@@ -86,6 +92,14 @@ public class MonsterCtrl : MonoBehaviour
         hp -= damage;
         if (hp <= 0)
             MonsterDead();
+        if (this.gameObject.name != "Boss")
+        {
+            statusController.coin += Random.Range(5, 11);
+        }
+        else
+        {
+            statusController.coin += 50;
+        }
     }
 
     void MonsterDead()
@@ -96,12 +110,26 @@ public class MonsterCtrl : MonoBehaviour
         curState = CurrentState.dead;
         nvAgent.isStopped = true;
         animator.SetTrigger("isDead");
-        
+
         gameObject.GetComponentInChildren<CapsuleCollider>().enabled = false;
 
         foreach (Collider coll in gameObject.GetComponentsInChildren<SphereCollider>())
         {
             coll.enabled = false;
+        }
+
+        if (this.gameObject.name != "Boss")
+        {
+
+            Instantiate(meat, this.transform.position, Quaternion.identity);
+
+        }
+        else
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                Instantiate(meat, this.transform.position, Quaternion.identity);
+            }
         }
 
         Invoke("MonsterDisappear", 2f);
