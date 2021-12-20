@@ -76,6 +76,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle: {fileID: 4030838261747304156}
+  inventory: {fileID: 0}
+  items:
+  - {fileID: 11400000, guid: c1bd34b580e7b4c4980226e467e4a3b2, type: 2}
+  - {fileID: 11400000, guid: a98b66c957875d846a8a05ed7e531475, type: 2}
+  sprite:
+  - {fileID: 21300000, guid: b97791af8fa516a4b83db8537b051e78, type: 3}
+  - {fileID: 21300000, guid: b7a7a1767220c24439ee39a7b13465eb, type: 3}
+  - {fileID: 21300000, guid: 551d8fdb907fa8f4bb8fcdbcc71579f5, type: 3}
+  - {fileID: 21300000, guid: 2f505b4d901948f49818f92cab8e5ef1, type: 3}
+  text: {fileID: 0}
+  image: {fileID: 0}
+  itemGetUI: {fileID: 0}
+  statusController: {fileID: 0}
 --- !u!1001 &6115005499746564936
 PrefabInstance:
   m_ObjectHideFlags: 0

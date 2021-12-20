@@ -40,9 +40,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6661246772281368646}
-  m_Layer: 0
+  - component: {fileID: 265732436}
+  - component: {fileID: 265732435}
+  m_Layer: 8
   m_Name: Index_Proximal_L
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61,6 +63,33 @@ Transform:
   m_Father: {fileID: 6661246772367679464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &265732436
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661246772281368641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 70
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &265732435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661246772281368641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c755a8f01860a44a0c35348269596b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusController: {fileID: 0}
+  damage: 25
 --- !u!1 &6661246772367679467
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +446,7 @@ GameObject:
   - component: {fileID: 3614518390493495530}
   - component: {fileID: 3955444299270900225}
   - component: {fileID: 8602040748868444899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Stone
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -508,12 +537,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curState: 0
-  attackfx: {fileID: 0}
-  deadfx: {fileID: 0}
   traceDist: 200
   attackDist: 5
   hp: 350
-  damage: 25
 --- !u!1 &6661246773905932556
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,9 +610,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6661246774071387694}
-  m_Layer: 0
+  - component: {fileID: 120617351}
+  - component: {fileID: 120617350}
+  m_Layer: 8
   m_Name: Index_Proximal_R
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -605,6 +633,33 @@ Transform:
   m_Father: {fileID: 6661246772387295158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &120617351
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661246774071387689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 70
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &120617350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661246774071387689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c755a8f01860a44a0c35348269596b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusController: {fileID: 0}
+  damage: 25
 --- !u!1 &6661246774135751228
 GameObject:
   m_ObjectHideFlags: 0

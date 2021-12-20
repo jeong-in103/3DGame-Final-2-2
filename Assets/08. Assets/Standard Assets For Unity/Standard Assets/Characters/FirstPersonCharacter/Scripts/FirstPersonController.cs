@@ -164,7 +164,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                              Time.fixedDeltaTime;
                 if(!m_IsWalking)
                 {
-                    theStatusController.DecreaseStamina(1);
+                    theStatusController.DecreaseStamina(2);
                 }
             }
 

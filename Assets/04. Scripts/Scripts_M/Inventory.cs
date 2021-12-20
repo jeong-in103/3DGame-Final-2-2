@@ -18,6 +18,9 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private GameObject AimImage; // 에임 이미지
 
+    [SerializeField]
+    private StatusController statusController;
+
     public Slot[] slots;  // 슬롯들 배열
     private WeaponSlot[] WeaponSlots;  // 슬롯들 배열
 
@@ -82,7 +85,7 @@ public class Inventory : MonoBehaviour
 
     public void AcquireItem(Item _item, int _count = 1)
     {
-        if (Item.ItemType.Equipment != _item.itemType)
+        if (Item.ItemType.Equipment != _item.itemType && Item.ItemType.Used != _item.itemType)
         {
             for (int i = 0; i < slots.Length; i++)
             {
@@ -130,6 +133,14 @@ public class Inventory : MonoBehaviour
     {
         if (_item.itemButton.color.a == 0)
         {
+            Debug.Log("리턴");
+            return;
+        }
+
+        if (_item.item.itemType == Item.ItemType.Used)
+        {
+            statusController.IncreaseHP(25);
+            _item.ClearSlot();
             return;
         }
 

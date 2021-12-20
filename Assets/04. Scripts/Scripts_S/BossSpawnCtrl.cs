@@ -16,13 +16,12 @@ public class BossSpawnCtrl : MonoBehaviour
 
         if (curTime > spawnTime_B)
         {
-            float newX = Random.Range(0f, 500f);
-            float newY = Random.Range(-50f, 50f);
-            float newZ = Random.Range(0f, 500f);
+            TerrainData theIsland;
+            theIsland = GameObject.Find("Terrain").GetComponent<Terrain>().terrainData;
 
-            boss = Instantiate(boss);
+            Vector3 worldTreePos = Vector3.Scale(theIsland.treeInstances[Random.Range(0, theIsland.treeInstances.Length)].position, theIsland.size) + Terrain.activeTerrain.transform.position;
+            Instantiate(boss, worldTreePos, Quaternion.identity); // Create a prefab tree on its pos
 
-            boss.transform.position = new Vector3(newX, newY, newZ);
 
             curTime = 0;
         }

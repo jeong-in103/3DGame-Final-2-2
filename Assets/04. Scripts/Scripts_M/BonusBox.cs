@@ -28,7 +28,15 @@ public class BonusBox : MonoBehaviour
 
     private bool isOpened = false;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        inventory = GameObject.Find("Inventory").GetComponent<Inventory>();
+        statusController = GameObject.Find("FPSController").GetComponent<StatusController>();
+        itemGetUI = GameObject.Find("ItemGetUIParant").transform.GetChild(0).gameObject;
+        text = itemGetUI.transform.GetChild(1).gameObject.GetComponentInChildren<Text>();
+        image = itemGetUI.transform.GetChild(0).gameObject.GetComponentInChildren<Image>();
+    }
+
     void Start()
     {
         particle.SetActive(false);

@@ -164,11 +164,11 @@ public class WeaponManager : MonoBehaviour
         }
         else if (_type == "PICKAXE")
         {
-            theAxeController.CloseWeaponChange(pickaxeDictionary[_name]);
+            thePickaxeController.CloseWeaponChange(pickaxeDictionary[_name]);
         }
         else if (_type == "SWORD")
         {
-            theAxeController.CloseWeaponChange(swordDictionary[_name]);
+            theSwordController.CloseWeaponChange(swordDictionary[_name]);
         }
     }
 }

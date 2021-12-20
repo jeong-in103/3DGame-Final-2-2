@@ -553,9 +553,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 64665213439669105}
-  m_Layer: 0
+  - component: {fileID: 1366691482}
+  - component: {fileID: 1366691483}
+  m_Layer: 8
   m_Name: Axe
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -574,6 +576,34 @@ Transform:
   m_Father: {fileID: 64665212430655310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1366691482
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64665213439669118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 16.416275
+  m_Height: 117.79836
+  m_Direction: 1
+  m_Center: {x: 0.85553014, y: 48.66886, z: 38.28883}
+--- !u!114 &1366691483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64665213439669118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c755a8f01860a44a0c35348269596b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusController: {fileID: 0}
+  damage: 50
 --- !u!1 &64665213501610468
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +738,7 @@ GameObject:
   - component: {fileID: 1410817281346346807}
   - component: {fileID: 3485076951187427078}
   - component: {fileID: 6018956010206598824}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -799,12 +829,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curState: 0
-  attackfx: {fileID: 0}
-  deadfx: {fileID: 0}
   traceDist: 200
   attackDist: 4
-  hp: 1000
-  damage: 50
+  hp: 600
 --- !u!1 &64665214103608999
 GameObject:
   m_ObjectHideFlags: 0

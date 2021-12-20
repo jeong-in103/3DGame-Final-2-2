@@ -9,6 +9,7 @@ TagManager:
   - Item
   - Mineral
   - Box
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - UI
   - Item
   - Box
-  - 
-  - 
+  - Attack
+  - Body
   - 
   - 
   - 

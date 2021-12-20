@@ -39,6 +39,11 @@ public class SwordController : CloseWeaponController
         {
             if (CheckObject())
             {
+                if (hitInfo.transform.tag == "Monster")
+                {
+                    Debug.Log("¶§¸²");
+                    hitInfo.transform.GetComponent<MonsterCtrl>().GetDamaged(damage);
+                }
                 isSwing = false;
                 Debug.Log(hitInfo.transform.name);
             }

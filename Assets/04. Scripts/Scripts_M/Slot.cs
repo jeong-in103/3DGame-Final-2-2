@@ -38,7 +38,7 @@ public class Slot : MonoBehaviour
             return;
         }
 
-        if(item.itemType != Item.ItemType.Equipment)
+        if(item.itemType != Item.ItemType.Equipment && item.itemType != Item.ItemType.Used)
         {
             Color color1 = itemImage.color;
             color1.a = _alpha;
@@ -60,7 +60,7 @@ public class Slot : MonoBehaviour
         itemImage.sprite = item.itemImage;
         itemButton.sprite = item.itemImage;
 
-        if (item.itemType != Item.ItemType.Equipment)
+        if (item.itemType != Item.ItemType.Equipment && item.itemType != Item.ItemType.Used)
         {
             go_CountImage.SetActive(true);
             text_Count.text = itemCount.ToString();
@@ -87,14 +87,17 @@ public class Slot : MonoBehaviour
     // 해당 슬롯 하나 삭제
     public void ClearSlot()
     {
-        if(itemImage.color.a == 0)
+        if (itemButton.color.a == 0 && itemImage.color.a != 0)
+        {
+            return;
+        }
+        if (itemImage.color.a == 0)
         {
             itemButton.sprite = null;
             SetColor(0);
             item = null;
             return;
         }
-
         itemCount = 0;
         itemImage.sprite = null;
         SetColor(0);

@@ -17,15 +17,19 @@ public class SpawnCtrl : MonoBehaviour
 
         if (curTime > spawnTime_M)
         {
+            TerrainData theIsland;
+            theIsland = GameObject.Find("Terrain").GetComponent<Terrain>().terrainData;
+            // For every tree on the island
+
             float newX = Random.Range(0f, 500f);
-            float newY = Random.Range(-50f, 50f);
+            float newY = Random.Range(0f, 50f);
             float newZ = Random.Range(0f, 500f);
 
             for (int i = 0; i < monster.Length; i++)
             {
-                monster[i] = Instantiate(monster[i]);
-
-                monster[i].transform.position = new Vector3(newX, newY, newZ);
+                // Find its local position scaled by the terrain size (to find the real world position)
+                Vector3 worldTreePos = Vector3.Scale(theIsland.treeInstances[i].position, theIsland.size) + Terrain.activeTerrain.transform.position;
+                Instantiate(monster[i], worldTreePos, Quaternion.identity); // Create a prefab tree on its pos
             }
 
             curTime = 0;

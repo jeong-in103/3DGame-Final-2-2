@@ -11,7 +11,6 @@ public class MonsterCtrl : MonoBehaviour
     public float traceDist = 10.0f;
     public float attackDist = 2.2f;
     public int hp;
-    public int damage;
 
     private Transform monsterTr;
     private Transform playerTr;
@@ -81,54 +80,12 @@ public class MonsterCtrl : MonoBehaviour
             yield return null;
         }
     }
-       
-    private void OnCollisionEnter(Collision coll)
+
+    public void GetDamaged(int damage)
     {
-        if (coll.gameObject.tag == "AXE")
-        {
-            Destroy(coll.gameObject);
-
-            //hp -= coll.gameObject.GetComponent<AxeCtrl>().damage;
-
-            if (hp <= 0)
-            {
-                MonsterDead();
-            }
-            else
-            {
-                animator.SetTrigger("isHit");
-            }
-        }
-        else if (coll.gameObject.tag == "PICKAX")
-        {
-            Destroy(coll.gameObject);
-
-            //hp -= coll.gameObject.GetComponent<PickaxCtrl>().damage;
-
-            if (hp <= 0)
-            {
-                MonsterDead();
-            }
-            else
-            {
-                animator.SetTrigger("isHit");
-            }
-        }
-        else if (coll.gameObject.tag == "SOWORD")
-        {
-            Destroy(coll.gameObject);
-
-            //hp -= coll.gameObject.GetComponent<SowordCtrl>().damage;
-
-            if (hp <= 0)
-            {
-                MonsterDead();
-            }
-            else
-            {
-                animator.SetTrigger("isHit");
-            }
-        }
+        hp -= damage;
+        if (hp <= 0)
+            MonsterDead();
     }
 
     void MonsterDead()
@@ -146,5 +103,12 @@ public class MonsterCtrl : MonoBehaviour
         {
             coll.enabled = false;
         }
+
+        Invoke("MonsterDisappear", 2f);
+    }
+
+    private void MonsterDisappear()
+    {
+        Destroy(this.gameObject);
     }
 }

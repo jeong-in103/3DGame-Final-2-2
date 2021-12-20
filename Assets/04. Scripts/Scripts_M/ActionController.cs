@@ -114,7 +114,7 @@ public class ActionController : MonoBehaviour
         {
             if(hitInfo.transform != null)
             {
-                if (theStatusController.coin > 10)
+                if (theStatusController.coin >= 10)
                 {
                     hitInfo.transform.GetComponentInChildren<BonusBox>().OpenBox();
                     theStatusController.coin -= 10;

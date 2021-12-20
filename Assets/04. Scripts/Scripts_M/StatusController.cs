@@ -37,6 +37,9 @@ public class StatusController : MonoBehaviour
     [SerializeField]
     private Text coinText; // 코인 개수
 
+    [SerializeField]
+    private Gameover gameOver;
+
     // 각 상태를 대표하는 인덱스
     private const int HP = 0, SP = 1;
 
@@ -85,7 +88,10 @@ public class StatusController : MonoBehaviour
         currentHp -= _count;
 
         if (currentHp <= 0)
-            Debug.Log("캐릭터의 체력이 0이 되었습니다!!");
+        {
+            Debug.Log("게임오버");
+            gameOver.GameOver();
+        }
     }
 
     public void DecreaseStamina(int _count)

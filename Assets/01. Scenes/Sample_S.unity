@@ -123,26 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 9ce4e4f4bf394a34eb81127de01a62b1, type: 2}
---- !u!1 &55455 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4754361232240760721, guid: 7ca0bf120dd7ad044955db151946b214, type: 3}
-  m_PrefabInstance: {fileID: 670453281}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &55456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 898a87a637938bc4e975e7d7624c2cbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioAttack: {fileID: 8300000, guid: f0b71227474361f4e95a523860bab055, type: 3}
-  audioDead: {fileID: 8300000, guid: a4496abd698f3ae44b280fa1a8d05ed8, type: 3}
-  audioSource: {fileID: 0}
 --- !u!1 &19653047
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19653047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.2, y: 2.16, z: 72.29}
+  m_LocalPosition: {x: 60.2, y: 20.88, z: 72.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -277,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243610452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 89.33131, y: -18.678617, z: 53.950977}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -413,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5382139058726702379, guid: 7ca0bf120dd7ad044955db151946b214, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 15.71
       objectReference: {fileID: 0}
     - target: {fileID: 5382139058726702379, guid: 7ca0bf120dd7ad044955db151946b214, type: 3}
       propertyPath: m_LocalPosition.z
@@ -559,7 +539,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1739147082}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: c94d6a3ec84de3e45a2890e9b9da6aaa, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: fc9249c166bf30440aec338f70166e9f, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1739147084
 Terrain:
@@ -570,7 +550,7 @@ Terrain:
   m_GameObject: {fileID: 1739147082}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: c94d6a3ec84de3e45a2890e9b9da6aaa, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: fc9249c166bf30440aec338f70166e9f, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -649,7 +629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848061972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 89.33131, y: -18.678617, z: 53.950977}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -699,7 +679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057668819}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.349014, y: -6.5647936, z: 58.610924}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
