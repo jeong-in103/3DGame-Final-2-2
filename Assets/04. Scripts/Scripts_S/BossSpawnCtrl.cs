@@ -2,31 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnCtrl : MonoBehaviour
+public class BossSpawnCtrl : MonoBehaviour
 {
-    public GameObject[] monster;
+    public GameObject boss;
 
-    public float spawnTime_M;
+    public float spawnTime_B;
 
     private float curTime;
 
     void Update()
     {
-
         curTime += Time.deltaTime;
 
-        if (curTime > spawnTime_M)
+        if (curTime > spawnTime_B)
         {
             float newX = Random.Range(0f, 500f);
             float newY = Random.Range(-50f, 50f);
             float newZ = Random.Range(0f, 500f);
 
-            for (int i = 0; i < monster.Length; i++)
-            {
-                monster[i] = Instantiate(monster[i]);
+            boss = Instantiate(boss);
 
-                monster[i].transform.position = new Vector3(newX, newY, newZ);
-            }
+            boss.transform.position = new Vector3(newX, newY, newZ);
 
             curTime = 0;
         }

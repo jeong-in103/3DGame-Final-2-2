@@ -463,7 +463,6 @@ GameObject:
   - component: {fileID: 5565195181850614647}
   - component: {fileID: 5565195181850614646}
   - component: {fileID: 5565195181850614643}
-  - component: {fileID: 4857990288672723200}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Monster
@@ -533,7 +532,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curState: 0
-  traceDist: 110
+  attackfx: {fileID: 8300000, guid: f0b71227474361f4e95a523860bab055, type: 3}
+  deadfx: {fileID: 8300000, guid: a4496abd698f3ae44b280fa1a8d05ed8, type: 3}
+  traceDist: 200
   attackDist: 5
   hp: 250
   damage: 20
@@ -559,20 +560,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4857990288672723200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754361232240760721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9fd9d8d50fa9fa4da88e99b28c13b82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 4754361232240760721}
-  spawnTime: 110
 --- !u!1 &4773405575255471306
 GameObject:
   m_ObjectHideFlags: 0

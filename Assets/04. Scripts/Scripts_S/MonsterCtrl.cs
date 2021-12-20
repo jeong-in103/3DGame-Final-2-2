@@ -139,7 +139,7 @@ public class MonsterCtrl : MonoBehaviour
         curState = CurrentState.dead;
         nvAgent.isStopped = true;
         animator.SetTrigger("isDead");
-
+        
         gameObject.GetComponentInChildren<CapsuleCollider>().enabled = false;
 
         foreach (Collider coll in gameObject.GetComponentsInChildren<SphereCollider>())
