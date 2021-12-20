@@ -64,6 +64,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            if(theStatusController.isDie)
+            {
+                m_MouseLook.SetCursorLock(false);
+                return;
+            }
+
             if (!Inventory.invectoryActivated && !ToolInventory.ToolInvectoryActivated)
             {
                 RotateView();

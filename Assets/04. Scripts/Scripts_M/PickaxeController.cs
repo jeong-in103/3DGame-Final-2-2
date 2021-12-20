@@ -35,7 +35,11 @@ public class PickaxeController : CloseWeaponController
         {
             if (CheckObject())
             {
-                if (hitInfo.transform.tag == "Mineral")
+                if (hitInfo.transform.tag == "Rock" && damage >= 10)
+                {
+                    hitInfo.transform.GetComponent<Rock>().Mining(damage);
+                }
+                if (hitInfo.transform.tag == "Iron" && damage >= 20)
                 {
                     hitInfo.transform.GetComponent<Rock>().Mining(damage);
                 }

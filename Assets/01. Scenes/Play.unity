@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -138,6 +142,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2003823587}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -496,6 +504,10 @@ PrefabInstance:
       value: ToolSlot (9)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -603,6 +615,10 @@ PrefabInstance:
     - target: {fileID: 2402078814274242589, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_Name
       value: ToolSlot (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -830,6 +846,10 @@ PrefabInstance:
       value: ToolSlot (12)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -866,6 +886,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -873,6 +897,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2053097566}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1083,6 +1111,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -1090,6 +1122,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1366346032}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1722,6 +1758,10 @@ PrefabInstance:
       value: ToolSlot (13)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -1999,6 +2039,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -2006,6 +2050,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 571082724}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2416,6 +2464,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -2423,6 +2475,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1365842253}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3371,6 +3427,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -3378,6 +3438,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 721254049}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3713,6 +3777,10 @@ PrefabInstance:
       value: ToolSlot (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -3739,6 +3807,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -3746,6 +3818,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 482389835}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4381,6 +4457,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -4388,6 +4468,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 819235306}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4653,6 +4737,10 @@ PrefabInstance:
       value: ToolSlot (11)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -4910,6 +4998,10 @@ PrefabInstance:
       value: ToolSlot (8)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -5117,6 +5209,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -5124,6 +5220,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 280774256}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5308,6 +5408,10 @@ PrefabInstance:
     - target: {fileID: 2402078814274242589, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_Name
       value: ToolSlot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5601,6 +5705,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -5608,6 +5716,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1394472225}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5870,6 +5982,10 @@ PrefabInstance:
     - target: {fileID: 2402078814274242589, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_Name
       value: ToolSlot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6342,9 +6458,9 @@ Transform:
   - {fileID: 991481427}
   - {fileID: 16250671}
   - {fileID: 161363758}
-  - {fileID: 909214155}
   - {fileID: 872531169}
   - {fileID: 4544765967098467507}
+  - {fileID: 909214155}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6660,7 +6776,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 64665213927227561, guid: 3d5d83d125858a84cbd21f77dec47d6b, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 64665213927227561, guid: 3d5d83d125858a84cbd21f77dec47d6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7290,6 +7406,10 @@ PrefabInstance:
       value: ToolSlot (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -7533,6 +7653,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -7540,6 +7664,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1344189438}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8164,7 +8292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5382139058726702379, guid: 7ca0bf120dd7ad044955db151946b214, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5382139058726702379, guid: 7ca0bf120dd7ad044955db151946b214, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8865,6 +8993,10 @@ PrefabInstance:
       value: ToolSlot (10)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -8961,6 +9093,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -8968,6 +9104,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1194813386}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9486,6 +9626,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -9493,6 +9637,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcquireWeaponItem
       objectReference: {fileID: 0}
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1890056040}
     - target: {fileID: 5591591469199198426, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10174,6 +10322,10 @@ PrefabInstance:
     - target: {fileID: 2402078814274242589, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_Name
       value: ToolSlot (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10978,6 +11130,10 @@ PrefabInstance:
       value: ToolSlot (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 840804182}
@@ -11585,7 +11741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9213257378357006636, guid: 3ed5ee78cd94bb748a5f37f195255bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9213257378357006636, guid: 3ed5ee78cd94bb748a5f37f195255bd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11779,7 +11935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5250134958141959002, guid: 2bf8bbee3b166f94b9ae76b8ab75c61f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.69
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: 5250134958141959002, guid: 2bf8bbee3b166f94b9ae76b8ab75c61f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11874,6 +12030,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1458317511}
     - target: {fileID: 8408150692582291020, guid: 2bf8bbee3b166f94b9ae76b8ab75c61f, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1205863035}
+    - target: {fileID: 8408150692582291020, guid: 2bf8bbee3b166f94b9ae76b8ab75c61f, type: 3}
       propertyPath: images_Gauge.Array.data[0]
       value: 
       objectReference: {fileID: 1898546731}
@@ -11899,6 +12059,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 779391170}
     m_Modifications:
+    - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1935146282, guid: f5ad2bbb7c3e3f741909ba90e5df71fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -12212,6 +12376,10 @@ PrefabInstance:
     - target: {fileID: 2402078814274242589, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_Name
       value: ToolSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7839842420058504682, guid: a0422ca2e827645478bc013df3feb32f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

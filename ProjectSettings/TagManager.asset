@@ -10,6 +10,8 @@ TagManager:
   - Mineral
   - Box
   - Attack
+  - Rock
+  - Iron
   layers:
   - Default
   - TransparentFX

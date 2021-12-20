@@ -27,6 +27,7 @@ public class StatusController : MonoBehaviour
     // 스태미나 감소 여부
     private bool spUsed;
     public bool cantUseSp;
+    public bool isDie = false;
 
     public int coin = 0;
 
@@ -55,7 +56,6 @@ public class StatusController : MonoBehaviour
         SPRecover();
         GaugeUpdate();
     }
-
     public void SetHP(int _hp)
     {
         hp += _hp;
@@ -89,6 +89,7 @@ public class StatusController : MonoBehaviour
 
         if (currentHp <= 0)
         {
+            isDie = true;
             Debug.Log("게임오버");
             gameOver.GameOver();
         }

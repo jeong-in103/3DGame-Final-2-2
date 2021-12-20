@@ -87,10 +87,10 @@ public class Slot : MonoBehaviour
     // 해당 슬롯 하나 삭제
     public void ClearSlot()
     {
-        if (itemButton.color.a == 0 && itemImage.color.a != 0)
-        {
-            return;
-        }
+        //if (itemButton.color.a == 0 && itemImage.color.a != 0)
+        //{
+        //    return;
+        //}
         if (itemImage.color.a == 0)
         {
             itemButton.sprite = null;

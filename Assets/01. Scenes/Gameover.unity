@@ -605,7 +605,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1346995715}
+      - m_Target: {fileID: 2106014759}
         m_TargetAssemblyTypeName: Title, Assembly-CSharp
         m_MethodName: ClickExit
         m_Mode: 1
@@ -824,7 +824,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1346995715}
+      - m_Target: {fileID: 2106014759}
         m_TargetAssemblyTypeName: Title, Assembly-CSharp
         m_MethodName: ClickStart
         m_Mode: 1
@@ -886,7 +886,6 @@ GameObject:
   - component: {fileID: 1346995718}
   - component: {fileID: 1346995717}
   - component: {fileID: 1346995716}
-  - component: {fileID: 1346995715}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -894,19 +893,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1346995715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346995714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2702da0c97d5cb04c81c76e56ea8cd67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Main
 --- !u!114 &1346995716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1109,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471567640}
   m_CullTransparentMesh: 1
+--- !u!1 &2106014758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106014761}
+  - component: {fileID: 2106014760}
+  - component: {fileID: 2106014759}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2106014759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106014758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2702da0c97d5cb04c81c76e56ea8cd67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Play
+--- !u!114 &2106014760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106014758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce5881bd976aee40ba3d3ecb5f26d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Gameover
+--- !u!4 &2106014761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106014758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 276.42346, y: -9.453415, z: 415.678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106474443
 GameObject:
   m_ObjectHideFlags: 0

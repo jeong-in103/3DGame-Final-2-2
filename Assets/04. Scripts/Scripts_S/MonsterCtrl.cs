@@ -91,14 +91,8 @@ public class MonsterCtrl : MonoBehaviour
     {
         hp -= damage;
         if (hp <= 0)
+        {
             MonsterDead();
-        if (this.gameObject.name != "Boss")
-        {
-            statusController.coin += Random.Range(5, 11);
-        }
-        else
-        {
-            statusController.coin += 50;
         }
     }
 
@@ -116,6 +110,15 @@ public class MonsterCtrl : MonoBehaviour
         foreach (Collider coll in gameObject.GetComponentsInChildren<SphereCollider>())
         {
             coll.enabled = false;
+        }
+
+        if (this.gameObject.name != "Boss")
+        {
+            statusController.coin += Random.Range(5, 11);
+        }
+        else
+        {
+            statusController.coin += 50;
         }
 
         if (this.gameObject.name != "Boss")
