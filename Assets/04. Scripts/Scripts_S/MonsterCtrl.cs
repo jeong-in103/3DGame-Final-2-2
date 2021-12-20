@@ -7,7 +7,6 @@ public class MonsterCtrl : MonoBehaviour
 {
     public enum CurrentState { idle, trace, attack, dead };
     public CurrentState curState = CurrentState.idle;
-    public Rigidbody rigid;
 
     public float traceDist = 10.0f;
     public float attackDist = 2.2f;
@@ -28,8 +27,6 @@ public class MonsterCtrl : MonoBehaviour
         nvAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
-
-        StartCoroutine(MoveMonster());
         StartCoroutine(this.CheckState());
         StartCoroutine(this.MonsterAction());
     }
@@ -84,21 +81,7 @@ public class MonsterCtrl : MonoBehaviour
             yield return null;
         }
     }
-
-    IEnumerator MoveMonster()
-    {
-        rigid = GetComponent<Rigidbody>();
-
-        while (true)
-        {
-            float dir1 = Random.Range(-2f, 2f);
-            float dir2 = Random.Range(-2f, 2f);
-
-            yield return new WaitForSeconds(2);
-            rigid.velocity = new Vector3(dir1, 3, dir2);
-        }
-    }
-
+       
     private void OnCollisionEnter(Collision coll)
     {
         if (coll.gameObject.tag == "AXE")
