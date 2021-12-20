@@ -12,7 +12,27 @@ public class SwordController : CloseWeaponController
         if (isActivate)
             TryAttack();
     }
-
+    protected override void ChangDamage()
+    {
+        switch (currentCloseWeapon.closeWeaponName)
+        {
+            case "WoodSword":
+                damage = 20;
+                break;
+            case "RockSword":
+                damage = 30;
+                break;
+            case "IronSword":
+                damage = 50;
+                break;
+            case "IceSword":
+                damage = 45;
+                break;
+            case "FireSword":
+                damage = 40;
+                break;
+        }
+    }
     protected override IEnumerator HitCoroutine()
     {
         while (isSwing)
@@ -29,6 +49,7 @@ public class SwordController : CloseWeaponController
     public override void CloseWeaponChange(CloseWeapon _closeWeapon)
     {
         base.CloseWeaponChange(_closeWeapon);
+        ChangDamage();
         isActivate = true;
     }
 }

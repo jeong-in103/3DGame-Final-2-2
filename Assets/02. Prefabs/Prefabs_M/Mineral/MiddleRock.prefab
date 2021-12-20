@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 849801322202429920}
   - component: {fileID: 849801322202429922}
-  - component: {fileID: 849801322202429923}
   - component: {fileID: 307840329}
+  - component: {fileID: 153515267}
+  - component: {fileID: 153515268}
   m_Layer: 0
   m_Name: MiddleRock
   m_TagString: Mineral
@@ -48,24 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   animator: {fileID: 307840329}
-  col: {fileID: 849801322202429923}
-  go_rock: {fileID: 0}
+  col: {fileID: 153515268}
+  go_rock: {fileID: 2572747151482445573}
   go_rock_item_prefab:
   - {fileID: 521567070997827034, guid: fbf738ed7f6cf52448234fce8c76905c, type: 3}
   - {fileID: 9076168475513177054, guid: dce74c51fbea3f043a0e4e7253dc0572, type: 3}
---- !u!135 &849801322202429923
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849801322202429921}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.7495826
-  m_Center: {x: 0, y: 0.54958266, z: 0}
 --- !u!95 &307840329
 Animator:
   serializedVersion: 3
@@ -85,6 +73,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &153515267
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849801322202429921}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &153515268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849801322202429921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9941063, z: 1.2249146}
+  m_Center: {x: 0, y: 0.51600647, z: 0.10153198}
 --- !u!1001 &3419729887581135444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142,6 +159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d820dc374efa965468353f35c5198513, type: 3}
+--- !u!1 &2572747151482445573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d820dc374efa965468353f35c5198513, type: 3}
+  m_PrefabInstance: {fileID: 3419729887581135444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2954338590746871231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d820dc374efa965468353f35c5198513, type: 3}

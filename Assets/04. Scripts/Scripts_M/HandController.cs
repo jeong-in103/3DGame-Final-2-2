@@ -6,7 +6,6 @@ public class HandController : CloseWeaponController
 {
     // 활성화 여부
     public static bool isActivate = true;
-    public int damage;
 
     private void Start()
     {
@@ -18,6 +17,11 @@ public class HandController : CloseWeaponController
     {
         if (isActivate)
             TryAttack();
+    }
+
+    protected override void ChangDamage()
+    {
+        damage = 5;
     }
 
     protected override IEnumerator HitCoroutine()
@@ -40,6 +44,7 @@ public class HandController : CloseWeaponController
     public override void CloseWeaponChange(CloseWeapon _closeWeapon)
     {
         base.CloseWeaponChange(_closeWeapon);
+        ChangDamage();
         isActivate = true;
     }
 }

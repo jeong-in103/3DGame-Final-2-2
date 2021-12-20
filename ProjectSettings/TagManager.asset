@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Monster
+  - Tree
+  - Item
+  - Mineral
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -12,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Item
+  - Box
   - 
   - 
   - 
