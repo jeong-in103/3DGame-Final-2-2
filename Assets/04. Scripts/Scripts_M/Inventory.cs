@@ -32,15 +32,15 @@ public class Inventory : MonoBehaviour
         TryOpenInventory();
     }
 
-    public string ReturnWeaponSlot(int i)
+    public WeaponSlot ReturnWeaponSlot(int i)
     {
         if (WeaponSlots[i].item != null)
         {
-            return WeaponSlots[i].item.itemName;
+            return WeaponSlots[i];
         }
         else
         {
-            return "Hand";
+            return null;
         }
     }
 

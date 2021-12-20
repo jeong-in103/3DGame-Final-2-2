@@ -119,6 +119,7 @@ public class ActionController : MonoBehaviour
                     hitInfo.transform.GetComponentInChildren<BonusBox>().OpenBox();
                     theStatusController.coin -= 10;
                     BoxInfoDisappear();
+                    hitInfo.transform.gameObject.layer = 0;
                 }
             }
         }

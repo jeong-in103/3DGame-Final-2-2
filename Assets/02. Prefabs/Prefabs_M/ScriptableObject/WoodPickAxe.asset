@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaaba3055f6ce8445963b516b158d438, type: 3}
-  m_Name: New Item
+  m_Name: WoodPickAxe
   m_EditorClassIdentifier: 
-  itemName: Axe
+  itemName: WoodPickAxe
   itemType: 0
-  itemImage: {fileID: 0}
-  itemPrefab: {fileID: 5310404037712579750, guid: c94b47bf2e9a66a42bef7bf415607ffc, type: 3}
-  weaponType: 
+  itemImage: {fileID: 21300000, guid: 2f7030617fe15094085bb51c7488a7cc, type: 3}
+  itemPrefab: {fileID: 0}
+  weaponType: PickAxe

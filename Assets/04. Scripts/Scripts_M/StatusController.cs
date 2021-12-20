@@ -53,6 +53,18 @@ public class StatusController : MonoBehaviour
         GaugeUpdate();
     }
 
+    public void SetHP(int _hp)
+    {
+        hp += _hp;
+        currentHp += _hp;
+    }
+
+    public void SetSP(int _sp)
+    {
+        sp += _sp;
+        currentSp += _sp;
+    }
+
     private void GaugeUpdate()
     {
         images_Gauge[HP].fillAmount = (float)currentHp / hp;

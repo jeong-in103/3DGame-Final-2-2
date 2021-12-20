@@ -32,6 +32,8 @@ public class MakeItemButton : MonoBehaviour
     }
     public void MakeItem()
     {
+        int canMakeCount = 0;
+        int[] slotIngredient = new int[ingredients.Length];
         for (int j = 0; j < ingredients.Length; j++)
         {
             for (int i = 0; i < inventory.slots.Length; i++)
@@ -45,11 +47,20 @@ public class MakeItemButton : MonoBehaviour
                 {
                     if(inventory.slots[i].itemCount >= ingredients[j].count)
                     {
-                        Debug.Log(item + "제작");
-                        inventory.AcquireItem(item);
-                        inventory.slots[i].SetSlotCount(-ingredients[j].count);
+                        canMakeCount++;
+                        slotIngredient[j] = i;
                     }
                 }
+            }
+        }
+
+        if(canMakeCount == ingredients.Length)
+        {
+            Debug.Log(item + "제작");
+            inventory.AcquireItem(item);
+            for(int i = 0; i < slotIngredient.Length; i++)
+            {
+                inventory.slots[slotIngredient[i]].SetSlotCount(-ingredients[i].count);
             }
         }
 

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Coal
   itemType: 2
-  itemImage: {fileID: 21300000, guid: 9f8b4d1acc60dbc43843871a28adc059, type: 3}
+  itemImage: {fileID: 21300000, guid: b512499b1cde96f4fbe50b596fe2a627, type: 3}
   itemPrefab: {fileID: 521567070997827034, guid: fbf738ed7f6cf52448234fce8c76905c, type: 3}
   weaponType: 
